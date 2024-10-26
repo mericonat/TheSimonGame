@@ -89,4 +89,7 @@ function startOver() {
   started = false;
   level = 0;
   gamePattern = [];
+  setTimeout(function () {
+    location.reload();
+  }, 200);
 }
