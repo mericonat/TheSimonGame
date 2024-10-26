@@ -26,13 +26,14 @@ body {
     border-radius: 20%;
   }
 
-  .btn-small {
+  .start-btn {
     margin: 25px;
     display: inline-block;
-    height: 50px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     border: 10px solid black;
     border-radius: 20%;
+    background-color: whitesmoke;
   }
   
   .game-over {
@@ -54,10 +55,6 @@ body {
   
   .yellow {
     background-color: yellow;
-  }
-  
-  .white {
-    background-color: whitesmoke;
   }
 
   .pressed {
