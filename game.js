@@ -13,7 +13,7 @@ $(document).keypress(function () {
   }
 });
 
-$("#start").click(function () {
+$("#start").on("click", function () {
   if (!started) {
     $("#level-title").text("Level " + level);
     nextSequence();
