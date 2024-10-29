@@ -24,13 +24,18 @@ $(document).ready(function () {
 });
 
 $(".btn").on("click", function () {
-  var userChosenColour = $(this).attr("id");
-  //userClickedPattern.pop();
-  userClickedPattern.push(userChosenColour);
-  //console.log(userClickedPattern);
-  playSound(userChosenColour);
-  animatePress(userChosenColour);
-  checkAnswer(userClickedPattern.length - 1);
+  if (started){
+    var userChosenColour = $(this).attr("id");
+    //userClickedPattern.pop();
+    userClickedPattern.push(userChosenColour);
+    //console.log(userClickedPattern);
+    playSound(userChosenColour);
+    animatePress(userChosenColour);
+    checkAnswer(userClickedPattern.length - 1);
+  }
+  else{
+    alert ('Press start!');
+  }
 });
 
 function checkAnswer(currentLevel) {
